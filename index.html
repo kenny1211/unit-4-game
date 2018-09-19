@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css">
+<link rel="stylesheet" href="assets/css/reset.css"
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Gem Game</title>
+</head>
+<body>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Crystals Collector!</h1>
+          <p class="lead">A random number will be given below. There are also four crystals, which when clicked will add a specific number to your total. Make your total match the random number and you win! But if your total goes over the random number you lose. Everytime the game restarts the crystal values are randomized for more fun!</p>
+        </div>
+      </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+            <div class="card">
+                <div class="card-header text-center">
+                  Random Number
+                </div>
+                <div class="card-body">
+                  <blockquote class="blockquote mb-0">
+                    <p class="text-center" id="compTotal"></p>
+                  </blockquote>
+                </div>
+              </div>
+        </div>
+        <div class="col-3">
+            <div class="card">
+                <div class="card-header text-center">
+                  Wins
+                </div>
+                <div class="card-body">
+                  <blockquote class="blockquote mb-0">
+                    <p class="text-center" id="winsTotal"></p>
+                  </blockquote>
+                </div>
+              </div>
+        </div>
+        <div class="col-3">
+            <div class="card">
+                <div class="card-header text-center">
+                  Lossses
+                </div>
+                <div class="card-body">
+                  <blockquote class="blockquote mb-0">
+                    <p class="text-center" id="lossesTotal"></p>
+                  </blockquote>
+                </div>
+              </div>
+        </div>
+        <div class="col-3">
+            <div class="card">
+                <div class="card-header text-center">
+                  Your Total
+                </div>
+                <div class="card-body">
+                  <blockquote class="blockquote mb-0">
+                    <p class="text-center" id="userTotal"></p>
+                  </blockquote>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+            <img src="assets/images/one.svg" alt="crystal" class="rounded-circle" class="crystal" id="crystalOne">
+        </div>
+        <div class="col-3">
+            <img src="assets/images/two.svg" alt="crystal" class="rounded-circle" class="crystal" id="crystalTwo">
+        </div>
+        <div class="col-3">
+            <img src="assets/images/three.svg" alt="crystal" class="rounded-circle" class="crystal" id="crystalThree">
+        </div>
+        <div class="col-3">
+            <img src="assets/images/four.svg" alt="crystal" class="rounded-circle" class="crystal" id="crystalFour">
+        </div>  
+      </div>
+    </div>
+
+<script src="https://unpkg.com/ionicons@4.4.2/dist/ionicons.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/js/bootstrap.min.js"></script>
+<script src="assets/javascript/game.js"></script>
+</body>
+</html>
